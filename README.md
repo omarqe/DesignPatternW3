@@ -1,4 +1,4 @@
-##Design Patterns (Week 3): Observer-Pattern Design
+## Design Patterns (Week 3): Observer-Pattern Design
 
 ### Questions:
 
