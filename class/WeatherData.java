@@ -1,13 +1,16 @@
-import java.util.ArrayList;
+import java.util.Observable;
+import java.util.Observer;
 
-public class WeatherData implements Subject {
-    private ArrayList<Observer> observers;
+public class WeatherData extends Observable {
     private float temperature;
     private float humidity;
     private float pressure;
 
     public WeatherData() {
-        observers = new ArrayList<Observer>();
+        // As we're extending Observable class, so we don't need to create a data
+        // structure in the constructor to hold the observers anymore.
+
+        // observers = new ArrayList<Observer>();
     }
 
     public void registerObserver(Observer o) {
